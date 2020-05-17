@@ -1,0 +1,10 @@
+name: HealthPacks
+author: Stellrow
+version: 1.0
+api-version: 1.13
+main: me.Stellrow.HealthPacks.HealthPacks
+
+commands:
+  healthpacks:
+    usage: /healthpacks
+    description: Main plugin command!

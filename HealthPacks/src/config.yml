@@ -1,0 +1,6 @@
+General:
+  healthToHeal: 4
+  soundToPlay:
+    sound: BLOCK_NOTE_BLOCK_PLING
+    volume: 1
+    pitch: 3.6
