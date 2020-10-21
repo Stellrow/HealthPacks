@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" build-on-make="true" name="HealthPacks:jar">
-    <output-path>$USER_HOME$/Desktop/D/Default paper/1.15 coding/plugins</output-path>
+    <output-path>$USER_HOME$/Desktop/D/Default/pubserver/pub.1.16.3pap/plugins</output-path>
     <root id="archive" name="HealthPacks.jar">
       <element id="module-output" name="HealthPacks" />
     </root>

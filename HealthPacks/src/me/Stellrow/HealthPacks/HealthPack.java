@@ -2,6 +2,8 @@ package me.Stellrow.HealthPacks;
 
 import org.bukkit.Location;
 import org.bukkit.Sound;
+import org.bukkit.attribute.Attributable;
+import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -72,9 +74,11 @@ public class HealthPack implements Listener {
     }
     public void tryHeal(Player p){
         int toHeal = pl.getConfig().getInt("General.healthToHeal");
-        if(p.getHealth()+toHeal>20){
+        Attributable attributes = p;
+        double maxHealth = attributes.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue();
+        if(p.getHealth()+toHeal>maxHealth){
             playSound(p.getLocation());
-            p.setHealth(20);
+            p.setHealth(maxHealth);
             return;
         }
         playSound(p.getLocation());
